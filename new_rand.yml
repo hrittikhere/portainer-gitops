@@ -16,7 +16,7 @@ spec:
       - name: gitops-demo
         image: nginx:latest
         ports:
-        - containerPort: 3111
+        - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -26,6 +26,6 @@ spec:
   selector:
     app: gitops-demo
   ports:
-    - port: 3111
-      targetPort: 3111
+    - port: 80
+      targetPort: 80
   type: LoadBalancer
