@@ -12,8 +12,8 @@ After you have followed the [tutorial]( https://install.portainer.io/) you shoul
 4.	For Build Method, select ` Git Repository `
 5.	The deployment Type would be ` Kubernetes`
 6.	Repository URL: https://github.com/hrittikhere/portainer-demo
-7.	Repository Reference would be ` refs/heads/main ` as the repository is on the main branch
-8.	Compose Path: ` portainer-deployment.yaml `
+7.	Repository Reference would be ` refs/heads/live ` as the repository is on the main branch
+8.	Compose Path: ` gitops.yaml `
 9.	Uncheck Authentication as this is a public repository
 10.	Click on Deploy 
 
