@@ -17,5 +17,5 @@ After you have followed the [tutorial]( https://install.portainer.io/) you shoul
 9.	Uncheck Authentication as this is a public repository
 10.	Click on Deploy 
 
-Your Application would be running, and you can access that on http://localhost:3111/ 
+The Application would be running, and you can access that from your LoadBalancer IP either by the dashboard or from the Portal!
 
