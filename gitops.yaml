@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: gitops-demo
-        image: hrittik/portainer:latest
+        image: hrittik/gitops:latest
         ports:
         - containerPort: 3111
 ---

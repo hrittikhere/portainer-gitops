@@ -1,12 +1,12 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Portainer - GitOps Demo
+name: Image Build and Push
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the Main branch
 on:
   push:
-    branches: [ main ]
+    branches: [ live ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -40,4 +40,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/portainer:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/gitops:latest
