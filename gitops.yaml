@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: portainer-deploy
+  name: deploy
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: gitops-demo
@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: portainer-gitops-service
+  name: gitops-service
 spec:
   selector:
     app: gitops-demo
